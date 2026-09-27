@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nguyen Huu Trung - Software Engineering Student & Aspiring Java Backend Developer at FPT University. Portfolio featuring Java, Spring Boot, Servlet, JSP, SQL Server projects.">
+  <meta name="keywords" content="Nguyen Huu Trung, Java Backend Developer, FPT University, Software Engineering, Spring Boot, Java Servlet, SQL Server, Portfolio">
+  <meta name="author" content="Nguyen Huu Trung">
+
+  <title>Nguyen Huu Trung | Java Backend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Nguyen Huu Trung Home">
+        <span class="logo-code">&lt;</span><span class="logo-text">Trung.dev</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-outline btn-sm header-cta">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge" data-aos="fade-down">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Software Engineering Student @ FPT University</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Nguyen Huu Trung</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="hero-subtitle-prefix">Career Goal:</span>
+            <span class="hero-subtitle text-accent" id="typing-text">Java Backend Developer</span>
+          </div>
+
+          <p class="hero-description">
+            Software Engineering student passionate about Java programming, scalable backend architecture, database design, and practical web applications. Driven to build secure, robust server-side systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- Quick Social & Info Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect & Code:</span>
+            <div class="social-links">
+              <a href="https://github.com/Trungkofc" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" id="hero-github-link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:trunglt125@gmail.com" class="social-link" title="Email Nguyen Huu Trung" id="hero-email-link">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn Profile (Optional)" id="hero-linkedin-link">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="profile-card">
+            <div class="profile-frame">
+              <img src="assets/profile.jpg" alt="Nguyen Huu Trung - Software Engineering Student" class="profile-img" id="profile-image" onerror="this.onerror=null; this.src='assets/profile.jpg';">
+              <div class="profile-overlay">
+                <span class="overlay-tag"><i class="fa-solid fa-camera"></i> Replace with your photo</span>
+              </div>
+            </div>
+
+            <div class="profile-info-pill">
+              <span class="status-indicator"></span>
+              <div class="status-text">
+                <strong>Seeking Internship / Backend Role</strong>
+                <span>FPT University Major in Software Engineering</span>
+              </div>
+            </div>
+
+            <!-- Tech Badges Float -->
+            <div class="floating-badge badge-java">
+              <i class="fa-brands fa-java"></i>
+              <span>Java Core</span>
+            </div>
+            <div class="floating-badge badge-spring">
+              <i class="fa-solid fa-leaf"></i>
+              <span>Spring Boot</span>
+            </div>
+            <div class="floating-badge badge-db">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Highlights Strip -->
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="highlight-info">
+              <h3>FPT University</h3>
+              <p>Software Engineering Major</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="highlight-info">
+              <h3>Backend Specialization</h3>
+              <p>Java, Spring Boot & JDBC</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="highlight-info">
+              <h3>Database Design</h3>
+              <p>Relational SQL Schemas & Optimization</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="highlight-info">
+              <h3>Practical Web Apps</h3>
+              <p>Cinema & Library Systems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-user-gear"></i> Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-gradient">Nguyen Huu Trung</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card card">
+            <div class="card-header">
+              <div class="icon-box"><i class="fa-solid fa-code-branch"></i></div>
+              <h3>Background & Career Vision</h3>
+            </div>
+            <div class="card-body">
+              <p class="lead-text">
+                I am a Software Engineering student at <strong>FPT University</strong> with a strong focus on backend development, object-oriented design, and database systems.
+              </p>
+              <p>
+                My passion lies in understanding how complex web applications function under the hood—from crafting clean, maintainable Java code to structuring efficient relational database schemas and handling secure data transactions.
+              </p>
+              <p>
+                My ultimate career goal is to become a high-impact <strong>Java Backend Developer</strong>, designing scalable server-side solutions, RESTful APIs, and robust enterprise applications that solve real-world problems.
+              </p>
+
+              <div class="about-highlights-list">
+                <div class="about-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Solid understanding of Java Core, OOP principles, and MVC design pattern</span>
+                </div>
+                <div class="about-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Hands-on experience with Java Servlet, JSP, JDBC, and Spring Boot framework</span>
+                </div>
+                <div class="about-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Relational database modeling, indexing, and T-SQL queries in MS SQL Server</span>
+                </div>
+                <div class="about-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Disciplined version control using Git branching strategies and GitHub collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-education-wrapper">
+            <!-- Education Card -->
+            <div class="education-card card">
+              <div class="card-header">
+                <div class="icon-box icon-university"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                  <span class="card-tag">Education</span>
+                  <h3>FPT University</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="degree-title">Bachelor of Software Engineering</div>
+                <div class="degree-period"><i class="fa-solid fa-calendar-days"></i> Undergraduate Student</div>
+                <p class="education-desc">
+                  Studying comprehensive software engineering methodologies, algorithm analysis, object-oriented programming, database management systems, and enterprise web application development.
+                </p>
+                <div class="course-tags">
+                  <span class="chip">Data Structures & Algorithms</span>
+                  <span class="chip">Object-Oriented Programming (OOP)</span>
+                  <span class="chip">Java Web Development (PRJ301)</span>
+                  <span class="chip">Database Systems (DBI202)</span>
+                  <span class="chip">Software Architecture & Design</span>
+                  <span class="chip">Software Testing & Quality</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillars / Mindset Card -->
+            <div class="mindset-card card">
+              <div class="card-header">
+                <div class="icon-box icon-mindset"><i class="fa-solid fa-compass-drafting"></i></div>
+                <h3>Developer Mindset</h3>
+              </div>
+              <div class="mindset-grid">
+                <div class="mindset-item">
+                  <i class="fa-solid fa-cubes"></i>
+                  <h4>Clean Architecture</h4>
+                  <p>Writing modular, layered code separating presentation, business logic, and data access.</p>
+                </div>
+                <div class="mindset-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <h4>Security & Reliability</h4>
+                  <p>Implementing role-based authorization, authentication, and secure input handling.</p>
+                </div>
+                <div class="mindset-item">
+                  <i class="fa-solid fa-rotate"></i>
+                  <h4>Continuous Learning</h4>
+                  <p>Eager to adopt modern frameworks, best practices, and enterprise technologies.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills section bg-light" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-layer-group"></i> Technical Toolkit</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Technologies</span></h2>
+          <p class="section-description">
+            Categorized overview of my technical stack, programming languages, backend frameworks, database systems, and development tools.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-container">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i> All Skills
+          </button>
+          <button class="filter-btn" data-filter="languages">
+            <i class="fa-solid fa-code"></i> Languages
+          </button>
+          <button class="filter-btn" data-filter="backend-web">
+            <i class="fa-solid fa-server"></i> Backend & Web
+          </button>
+          <button class="filter-btn" data-filter="databases">
+            <i class="fa-solid fa-database"></i> Databases
+          </button>
+          <button class="filter-btn" data-filter="tools">
+            <i class="fa-solid fa-wrench"></i> Developer Tools
+          </button>
+        </div>
+
+        <!-- Skills Grid Cards -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Java -->
+          <div class="skill-card card" data-category="languages">
+            <div class="skill-icon-wrapper java-icon">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>Java</h3>
+                <span class="category-badge">Core Language</span>
+              </div>
+              <p class="skill-desc">Primary programming language for backend development. Experienced with Object-Oriented Programming (OOP), Collections Framework, Exception Handling, and I/O streams.</p>
+              <div class="skill-tags">
+                <span>OOP</span>
+                <span>Collections</span>
+                <span>Generics</span>
+                <span>Exception Handling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="skill-card card" data-category="languages databases">
+            <div class="skill-icon-wrapper sql-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>SQL</h3>
+                <span class="category-badge">Database Query</span>
+              </div>
+              <p class="skill-desc">Proficient in Structured Query Language for designing relational tables, executing CRUD operations, complex joins, subqueries, and data normalization.</p>
+              <div class="skill-tags">
+                <span>DDL / DML</span>
+                <span>JOINS</span>
+                <span>Subqueries</span>
+                <span>Normalization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card card" data-category="languages">
+            <div class="skill-icon-wrapper js-icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>JavaScript</h3>
+                <span class="category-badge">Language</span>
+              </div>
+              <p class="skill-desc">Vanilla ES6+ JavaScript for interactive web applications, client-side form validation, dynamic DOM manipulation, and asynchronous HTTP requests.</p>
+              <div class="skill-tags">
+                <span>ES6+</span>
+                <span>DOM API</span>
+                <span>Event Handling</span>
+                <span>Fetch / AJAX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="skill-card card" data-category="languages">
+            <div class="skill-icon-wrapper html-icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>HTML5</h3>
+                <span class="category-badge">Markup</span>
+              </div>
+              <p class="skill-desc">Building clean, semantic HTML structure adhering to web accessibility (WCAG), SEO standards, and structured document hierarchy.</p>
+              <div class="skill-tags">
+                <span>Semantic HTML</span>
+                <span>Forms & Validation</span>
+                <span>Accessibility</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-card card" data-category="languages">
+            <div class="skill-icon-wrapper css-icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>CSS3</h3>
+                <span class="category-badge">Styling</span>
+              </div>
+              <p class="skill-desc">Creating modern, responsive user interfaces using Flexbox, CSS Grid, custom CSS variables, keyframe animations, and media queries.</p>
+              <div class="skill-tags">
+                <span>Flexbox</span>
+                <span>CSS Grid</span>
+                <span>Variables</span>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Java Servlet -->
+          <div class="skill-card card" data-category="backend-web">
+            <div class="skill-icon-wrapper servlet-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>Java Servlet</h3>
+                <span class="category-badge">Java EE</span>
+              </div>
+              <p class="skill-desc">Server-side request and response handling, URL routing, HTTP session management, filter chains for encoding/auth, and request forwarding.</p>
+              <div class="skill-tags">
+                <span>HttpServlet</span>
+                <span>Session Management</span>
+                <span>Servlet Filters</span>
+                <span>MVC Pattern</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- JSP -->
+          <div class="skill-card card" data-category="backend-web">
+            <div class="skill-icon-wrapper jsp-icon">
+              <i class="fa-solid fa-file-code"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>JSP (Jakarta Server Pages)</h3>
+                <span class="category-badge">Java EE</span>
+              </div>
+              <p class="skill-desc">Dynamic view generation using Java Server Pages, JSTL tags, Expression Language (EL), and layout inclusion for Java web applications.</p>
+              <div class="skill-tags">
+                <span>JSTL Tags</span>
+                <span>Expression Language</span>
+                <span>Dynamic UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- JDBC -->
+          <div class="skill-card card" data-category="backend-web databases">
+            <div class="skill-icon-wrapper jdbc-icon">
+              <i class="fa-solid fa-plug"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>JDBC</h3>
+                <span class="category-badge">Database Access</span>
+              </div>
+              <p class="skill-desc">Connecting Java applications to relational databases. Implementing Data Access Object (DAO) pattern, PreparedStatement for SQL injection prevention.</p>
+              <div class="skill-tags">
+                <span>DAO Pattern</span>
+                <span>PreparedStatement</span>
+                <span>ResultSet</span>
+                <span>Transactions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spring Boot -->
+          <div class="skill-card card" data-category="backend-web">
+            <div class="skill-icon-wrapper spring-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>Spring Boot</h3>
+                <span class="category-badge">Framework</span>
+              </div>
+              <p class="skill-desc">Developing enterprise backend applications with Spring Boot, Spring Security for authentication/authorization, and dependency injection.</p>
+              <div class="skill-tags">
+                <span>Spring MVC</span>
+                <span>Spring Security</span>
+                <span>Dependency Injection</span>
+                <span>REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Microsoft SQL Server -->
+          <div class="skill-card card" data-category="databases">
+            <div class="skill-icon-wrapper sqlserver-icon">
+              <i class="fa-solid fa-hard-drive"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>Microsoft SQL Server</h3>
+                <span class="category-badge">RDBMS</span>
+              </div>
+              <p class="skill-desc">Relational Database Management System utilized for creating structured schemas, primary/foreign key constraints, views, and SSMS database administration.</p>
+              <div class="skill-tags">
+                <span>Schema Design</span>
+                <span>Foreign Keys</span>
+                <span>T-SQL</span>
+                <span>SSMS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Git -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-icon-wrapper git-icon">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>Git</h3>
+                <span class="category-badge">Version Control</span>
+              </div>
+              <p class="skill-desc">Distributed version control system for tracking source code changes, branch management (`main`, `dev`, `feature`), cherry-picking, and resolving merge conflicts.</p>
+              <div class="skill-tags">
+                <span>Branching</span>
+                <span>Merge Conflicts</span>
+                <span>CLI Commands</span>
+                <span>Commit History</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-icon-wrapper github-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>GitHub</h3>
+                <span class="category-badge">Platform</span>
+              </div>
+              <p class="skill-desc">Hosting code repositories, managing Pull Requests, collaborative code reviews, issue tracking, and publishing static sites via GitHub Pages.</p>
+              <div class="skill-tags">
+                <span>Remote Repos</span>
+                <span>Pull Requests</span>
+                <span>GitHub Pages</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- IntelliJ IDEA -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-icon-wrapper intellij-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>IntelliJ IDEA</h3>
+                <span class="category-badge">Java IDE</span>
+              </div>
+              <p class="skill-desc">Primary Integrated Development Environment for Java projects, Maven build management, Tomcat server integration, debugging, and code refactoring.</p>
+              <div class="skill-tags">
+                <span>Java Debugger</span>
+                <span>Maven</span>
+                <span>Tomcat Server</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- VS Code -->
+          <div class="skill-card card" data-category="tools">
+            <div class="skill-icon-wrapper vscode-icon">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-header">
+                <h3>VS Code</h3>
+                <span class="category-badge">Code Editor</span>
+              </div>
+              <p class="skill-desc">Lightweight code editor used for HTML/CSS/JavaScript frontend development, configuration files, project documentation, and quick script execution.</p>
+              <div class="skill-tags">
+                <span>Web Dev</span>
+                <span>Extensions</span>
+                <span>Git Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Practical <span class="text-gradient">Projects</span></h2>
+          <p class="section-description">
+            Hands-on software engineering projects demonstrating backend architecture, database integration, security controls, and version control mastery.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Cinema Booking System -->
+          <article class="project-card card" data-project="cinema">
+            <div class="project-banner project-banner-cinema">
+              <div class="project-type-tag"><i class="fa-solid fa-film"></i> Java Web Application</div>
+              <div class="project-icon-large"><i class="fa-solid fa-ticket"></i></div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tech-badge">Java Servlet</span>
+                <span class="project-tech-badge">JSP</span>
+                <span class="project-tech-badge">JDBC</span>
+                <span class="project-tech-badge">SQL Server</span>
+              </div>
+
+              <h3 class="project-title">Cinema Booking System</h3>
+
+              <p class="project-summary">
+                A robust Java EE web application built with MVC architecture for managing cinema operations, real-time seat reservations, and concession sales.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-check"></i> Multi-role Authentication (Customer, Staff, Manager, Admin)</li>
+                <li><i class="fa-solid fa-check"></i> Dynamic movie management, schedules & room showtimes</li>
+                <li><i class="fa-solid fa-check"></i> Interactive seat layout selection & booking engine</li>
+                <li><i class="fa-solid fa-check"></i> Ticket check-in validation scanner & snack POS sales</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="cinema">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="https://github.com/Trungkofc/CinemaManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm github-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Online Library Management System -->
+          <article class="project-card card" data-project="library">
+            <div class="project-banner project-banner-library">
+              <div class="project-type-tag"><i class="fa-solid fa-book-bookmark"></i> Enterprise Backend</div>
+              <div class="project-icon-large"><i class="fa-solid fa-book-open"></i></div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tech-badge">Spring Boot</span>
+                <span class="project-tech-badge">Spring Security</span>
+                <span class="project-tech-badge">SQL</span>
+              </div>
+
+              <h3 class="project-title">Online Library Management System</h3>
+
+              <p class="project-summary">
+                A secure enterprise library portal leveraging Spring Boot and Spring Security for managing book catalogs, user roles, and borrow request workflows.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-check"></i> Role-Based Access Control (RBAC) via Spring Security</li>
+                <li><i class="fa-solid fa-check"></i> Comprehensive book inventory catalog with multi-field search</li>
+                <li><i class="fa-solid fa-check"></i> Automated borrowing request submission & librarian approvals</li>
+                <li><i class="fa-solid fa-check"></i> Member borrowing history, due date alerts & status tracking</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="library">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="https://github.com/Trungkofc/OnlineLibraryManagement" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm github-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Git Assignment -->
+          <article class="project-card card" data-project="git">
+            <div class="project-banner project-banner-git">
+              <div class="project-type-tag"><i class="fa-solid fa-code-branch"></i> Version Control</div>
+              <div class="project-icon-large"><i class="fa-brands fa-git-alt"></i></div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tech-badge">Git CLI</span>
+                <span class="project-tech-badge">GitHub</span>
+                <span class="project-tech-badge">Workflow</span>
+              </div>
+
+              <h3 class="project-title">Git Assignment & Collaboration</h3>
+
+              <p class="project-summary">
+                Practical engineering assignment detailing repository initialization, branching strategies, structured commit histories, and merge conflict resolution.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><i class="fa-solid fa-check"></i> Git workspace initialization & folder structure setup</li>
+                <li><i class="fa-solid fa-check"></i> Feature-branch development strategy (`main`, `dev`, `feature/*`)</li>
+                <li><i class="fa-solid fa-check"></i> Atomic commits with standard conventional messages</li>
+                <li><i class="fa-solid fa-check"></i> Simulated multi-developer merge conflict resolution</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-modal="git">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="https://github.com/Trungkofc/Git-Assignment" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm github-btn" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section bg-light" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> Let's Connect</span>
+          <h2 class="section-title">Contact <span class="text-gradient">Information</span></h2>
+          <p class="section-description">
+            Feel free to reach out for internship opportunities, project collaborations, or general technical inquiries.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-wrapper">
+            <div class="contact-info-card card">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Email Address</span>
+                  <a href="mailto:trunglt125@gmail.com" class="info-value" id="contact-email-text">trunglt125@gmail.com</a>
+                  <button class="copy-btn" id="copy-email-btn" title="Copy Email to Clipboard">
+                    <i class="fa-solid fa-copy"></i> Copy
+                  </button>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon icon-github"><i class="fa-brands fa-github"></i></div>
+                <div class="info-content">
+                  <span class="info-label">GitHub Profile</span>
+                  <a href="https://github.com/Trungkofc" target="_blank" rel="noopener noreferrer" class="info-value" id="contact-github-text">https://github.com/Trungkofc</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon icon-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="info-content">
+                  <span class="info-label">LinkedIn Profile</span>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="info-value" id="contact-linkedin-text">[OPTIONAL - Add LinkedIn URL]</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon icon-university"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="info-content">
+                  <span class="info-label">University</span>
+                  <span class="info-value text-dark">FPT University, Vietnam</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile Customization Helper Box -->
+            <div class="placeholder-notice-box">
+              <div class="notice-header">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Personal Information Configured</span>
+              </div>
+              <p>
+                Email is set to <code>trunglt125@gmail.com</code> and GitHub to <code>https://github.com/Trungkofc</code>. You can replace your headshot at <code>assets/profile.jpg</code>.
+              </p>
+              <button class="btn btn-sm btn-ghost text-accent" id="open-placeholders-guide">
+                <i class="fa-solid fa-circle-question"></i> View Instructions
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-card card">
+            <div class="card-header">
+              <div class="icon-box"><i class="fa-solid fa-message"></i></div>
+              <div>
+                <h3>Send Me a Message</h3>
+                <span class="card-subtitle">Frontend Form with Real-Time Validation</span>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="user-name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="user-name" name="name" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+                <span class="error-message" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="user-email" name="email" class="form-control" placeholder="e.g. johndoe@example.com" required>
+                </div>
+                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="user-subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="user-subject" name="subject" class="form-control" placeholder="e.g. Java Internship Opportunity">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="user-message" name="message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="error-message" id="message-error">Please enter a message (at least 10 characters).</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+
+              <p class="form-disclaimer">
+                <i class="fa-solid fa-lock"></i> Note: This form processes inputs on the frontend and provides option to dispatch via mailto client.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-code">&lt;</span><span class="logo-text">Trung.dev</span><span class="logo-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Nguyen Huu Trung — Software Engineering Student @ FPT University</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Nguyen Huu Trung. Built with HTML5, CSS3 & Vanilla JavaScript.</p>
+        <p class="footer-subtext">Designed for GitHub Pages deployment.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Dynamic modal content loaded via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTRUCTIONS MODAL -->
+  <div class="modal" id="guide-modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" id="guide-modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="guide-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content guide-modal-content">
+        <h3><i class="fa-solid fa-circle-info text-accent"></i> Portfolio Setup Status</h3>
+        <p>Your portfolio is customized with your personal profile details:</p>
+        
+        <ol class="guide-list">
+          <li>
+            <strong>Full Name:</strong>
+            <p>Nguyen Huu Trung</p>
+          </li>
+          <li>
+            <strong>Email Address:</strong>
+            <p><code>trunglt125@gmail.com</code></p>
+          </li>
+          <li>
+            <strong>GitHub Profile:</strong>
+            <p><code>https://github.com/Trungkofc</code></p>
+          </li>
+          <li>
+            <strong>Photograph:</strong>
+            <p>Add your headshot photo to <code>Portfolio/assets/profile.jpg</code>.</p>
+          </li>
+        </ol>
+        <button class="btn btn-primary btn-block" id="guide-modal-ok">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript App -->
+  <script src="app.js"></script>
+</body>
+</html>
