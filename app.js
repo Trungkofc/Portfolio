@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyClipboard();
   initBackToTop();
   initScrollAnimations();
-  initGuideModal();
   updateCurrentYear();
 });
 
@@ -345,35 +344,7 @@ function initProjectModals() {
 }
 
 /* ==========================================================================
-   8. GUIDE / PLACEHOLDERS MODAL
-   ========================================================================== */
-function initGuideModal() {
-  const guideModal = document.getElementById('guide-modal');
-  const openGuideBtn = document.getElementById('open-placeholders-guide');
-  const guideCloseBtn = document.getElementById('guide-close-btn');
-  const guideOverlay = document.getElementById('guide-modal-overlay');
-  const guideOkBtn = document.getElementById('guide-modal-ok');
-
-  if (!guideModal) return;
-
-  function openGuide() {
-    guideModal.classList.add('active');
-    guideModal.setAttribute('aria-hidden', 'false');
-  }
-
-  function closeGuide() {
-    guideModal.classList.remove('active');
-    guideModal.setAttribute('aria-hidden', 'true');
-  }
-
-  if (openGuideBtn) openGuideBtn.addEventListener('click', openGuide);
-  if (guideCloseBtn) guideCloseBtn.addEventListener('click', closeGuide);
-  if (guideOverlay) guideOverlay.addEventListener('click', closeGuide);
-  if (guideOkBtn) guideOkBtn.addEventListener('click', closeGuide);
-}
-
-/* ==========================================================================
-   9. CONTACT FORM VALIDATION & HANDLING
+   8. CONTACT FORM VALIDATION & HANDLING
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
@@ -460,7 +431,7 @@ function initContactForm() {
 }
 
 /* ==========================================================================
-   10. COPY EMAIL TO CLIPBOARD
+   9. COPY EMAIL TO CLIPBOARD
    ========================================================================== */
 function initCopyClipboard() {
   const copyBtn = document.getElementById('copy-email-btn');
@@ -496,7 +467,7 @@ function initCopyClipboard() {
 }
 
 /* ==========================================================================
-   11. BACK TO TOP BUTTON
+   10. BACK TO TOP BUTTON
    ========================================================================== */
 function initBackToTop() {
   const backToTopBtn = document.getElementById('back-to-top');
@@ -519,7 +490,7 @@ function initBackToTop() {
 }
 
 /* ==========================================================================
-   12. SCROLL ANIMATIONS (INTERSECTION OBSERVER)
+   11. SCROLL ANIMATIONS (INTERSECTION OBSERVER)
    ========================================================================== */
 function initScrollAnimations() {
   const animatedElements = document.querySelectorAll('.card, .highlight-card, .section-header');
@@ -548,7 +519,7 @@ function initScrollAnimations() {
 }
 
 /* ==========================================================================
-   13. TOAST NOTIFICATION UTILITY
+   12. TOAST NOTIFICATION UTILITY
    ========================================================================== */
 function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');
@@ -575,7 +546,7 @@ function showToast(message, type = 'success') {
 }
 
 /* ==========================================================================
-   14. CURRENT YEAR DYNAMIC FOOTER
+   13. CURRENT YEAR DYNAMIC FOOTER
    ========================================================================== */
 function updateCurrentYear() {
   const yearElem = document.getElementById('current-year');

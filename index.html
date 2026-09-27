@@ -117,9 +117,6 @@
           <div class="profile-card">
             <div class="profile-frame">
               <img src="assets/profile.jpg" alt="Nguyen Huu Trung - Software Engineering Student" class="profile-img" id="profile-image" onerror="this.onerror=null; this.src='assets/profile.jpg';">
-              <div class="profile-overlay">
-                <span class="overlay-tag"><i class="fa-solid fa-camera"></i> Replace with your photo</span>
-              </div>
             </div>
 
             <div class="profile-info-pill">
@@ -779,18 +776,15 @@
               </div>
             </div>
 
-            <!-- Profile Customization Helper Box -->
+            <!-- Personal Information Configured Box -->
             <div class="placeholder-notice-box">
               <div class="notice-header">
                 <i class="fa-solid fa-circle-check"></i>
                 <span>Personal Information Configured</span>
               </div>
               <p>
-                Email is set to <code>trunglt125@gmail.com</code> and GitHub to <code>https://github.com/Trungkofc</code>. You can replace your headshot at <code>assets/profile.jpg</code>.
+                Email is set to <code>trunglt125@gmail.com</code> and GitHub to <code>https://github.com/Trungkofc</code>.
               </p>
-              <button class="btn btn-sm btn-ghost text-accent" id="open-placeholders-guide">
-                <i class="fa-solid fa-circle-question"></i> View Instructions
-              </button>
             </div>
           </div>
 
@@ -894,38 +888,6 @@
       <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
       <div class="modal-content" id="modal-content">
         <!-- Dynamic modal content loaded via app.js -->
-      </div>
-    </div>
-  </div>
-
-  <!-- INSTRUCTIONS MODAL -->
-  <div class="modal" id="guide-modal" aria-hidden="true" role="dialog">
-    <div class="modal-overlay" id="guide-modal-overlay"></div>
-    <div class="modal-container">
-      <button class="modal-close" id="guide-close-btn" aria-label="Close modal">&times;</button>
-      <div class="modal-content guide-modal-content">
-        <h3><i class="fa-solid fa-circle-info text-accent"></i> Portfolio Setup Status</h3>
-        <p>Your portfolio is customized with your personal profile details:</p>
-        
-        <ol class="guide-list">
-          <li>
-            <strong>Full Name:</strong>
-            <p>Nguyen Huu Trung</p>
-          </li>
-          <li>
-            <strong>Email Address:</strong>
-            <p><code>trunglt125@gmail.com</code></p>
-          </li>
-          <li>
-            <strong>GitHub Profile:</strong>
-            <p><code>https://github.com/Trungkofc</code></p>
-          </li>
-          <li>
-            <strong>Photograph:</strong>
-            <p>Add your headshot photo to <code>Portfolio/assets/profile.jpg</code>.</p>
-          </li>
-        </ol>
-        <button class="btn btn-primary btn-block" id="guide-modal-ok">Got it!</button>
       </div>
     </div>
   </div>
